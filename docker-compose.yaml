@@ -1,0 +1,14 @@
+services:
+  varnish-plus-vs-gcc:
+    image: varnish-plus-vs-gcc
+    build: ./vc-gcc-client
+    environment:
+      VS_GCC_SERVER: "http://vc-gcc-server:8080"
+    depends_on:
+      - vc-gcc-server
+
+  vc-gcc-server:
+    image: vc-gcc-server
+    build: ./vc-gcc-server
+    expose:
+      - "8080"
