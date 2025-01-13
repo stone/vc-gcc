@@ -5,6 +5,8 @@ enables to compile VCL into shared objects (.so files) using a HTTP service,
 making it suitable for environments where local compilation is not desired
 or possible.
 
+https://github.com/user-attachments/assets/15e1343d-692f-42cc-b668-258a80c63617
+
 ## Components
 
 - **vc-gcc-client**: A Go program that sends source files to the compilation service (use as cc_command parameter in Varnish)
